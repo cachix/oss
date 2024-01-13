@@ -19,3 +19,7 @@ jsonError err json =
       )
 
 ```
+
+Here are issues from open source that requires advanced Haskell knowledge and possiblly other devops areas:
+
+- [ghcid leaves dangling processes on shutdown](https://github.com/ndmitchell/ghcid/issues/257)
