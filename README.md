@@ -24,4 +24,4 @@ jsonError err json =
 
 Here are issues from open source that requires advanced Haskell knowledge and possiblly other devops areas:
 
-- [ghcid leaves dangling processes on shutdown](https://github.com/ndmitchell/ghcid/issues/257), investigate [this solution](https://github.com/acondolu/ghcid/commit/d299f9a4cbdf7a2278d7c5b1be03adfeb4cc195b)
+- [ghcid doesn't correctly reload the session](https://github.com/ndmitchell/ghcid/issues/191)
