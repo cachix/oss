@@ -1,27 +1,13 @@
-Here are the issues from open source that require basic Haskell skills:
+A list of issues that are not time-critical for us, but we'd like to see them done.
 
-- https://github.com/agrafix/elm-bridge/pull/53#issuecomment-1877219709
+If you're interested on working on any of them, contact us for sponsorship.
 
-- Port this snippet to Servant
+### axum-bridge-elm
 
-```haskell
+In similar style of [servant-elm](https://github.com/haskell-servant/servant-elm#readme), we'd like to translate [Axum's router](https://docs.rs/axum/latest/axum/struct.Router.html)
+into Elm module.
 
-jsonError :: (ToJSON a) => ServerError -> a -> ServerError
-jsonError err json =
-  err
-    { errBody = encode json,
-      errHeaders = [jsonHeader]
-    }
-  where
-    jsonHeader =
-      ( "Content-Type",
-        "application/json;charset=utf-8"
-      )
+[elm_rs](https://crates.io/crates/elm_rs) looks like the best candidate for converting types and decoder, while the router to Elm's HTTP conversion is yet to be written.
 
-```
 
-- [instance Random DiffTime](https://github.com/haskell/random/issues/156)
 
-Here are issues from open source that requires advanced Haskell knowledge and possiblly other devops areas:
-
-- [ghcid doesn't correctly reload the session](https://github.com/ndmitchell/ghcid/issues/191)
